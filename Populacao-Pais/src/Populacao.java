@@ -1,12 +1,27 @@
+import java.util.Scanner;
+
 public class Populacao {
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        System.out.println();
+
         
-        double a = 80000;
-        double rateA = 1.03;
-        double b = 200000;
-        double rateB = 1.015;
+        System.out.println(" Informe a população A: ");
+        double a = scan.nextDouble();
+        
+        System.out.println(" Informe a taxa de crescimento A: ");
+        double rateA = scan.nextDouble();
+
+        System.out.println(" Informe a população B: ");
+        double b = scan.nextDouble();
+
+        System.out.println(" Informe a taxa de crescimento B: ");
+        double rateB = scan.nextDouble();
+        
         double count = 0;
+
+        
 
 
 
@@ -26,7 +41,7 @@ public class Populacao {
 
       
 
-
+        scan.close();
     }
 
 
