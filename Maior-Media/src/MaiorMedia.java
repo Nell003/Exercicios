@@ -2,34 +2,32 @@ import java.util.Scanner;
 
 public class MaiorMedia {
 
-    public static void main(String[] args) {
-        
-        Scanner scan = new Scanner(System.in);
+   public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    System.out.println();
+
+   int count = 0;
+   int soma = 0;
+   int numero = 0;
+   int media = 0;
+
+  
 
 
-        int count = 0;
-        int maior = 0;
-        int numero;
+   while (count <5 ){
+    System.out.println("Informe o número: ");
+    numero = scan.nextInt();
+    count++;
+    soma = numero + soma;
+    media = soma / 5;
+    
 
+   }
+   System.out.println("A soma total dos números é " + soma + " e a média total é " + media );
+   
+   scan.close();
+}
 
-        while (count <5) {
-            count++;
-            System.out.println("Número: ");
-            numero = scan.nextInt();
-
-        if (numero > maior) {
-            maior = numero;
-            System.out.println(" O maior número mudou para :  " + maior);
-
-        }
-
-     
-        }
-
-            scan.close();
-
-            System.out.println(" O maior número é: " + maior);
-    }
 
     
 }
