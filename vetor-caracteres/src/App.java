@@ -36,5 +36,6 @@ public class App {
 
         System.out.println("Quantidade de consoantes : " + quantidadeConsoantes);
 
+       scanner.close();        
     }
 }
